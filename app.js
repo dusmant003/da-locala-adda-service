@@ -12,6 +12,8 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var uploadRouter = require('./routes/upload.route');
 var adminRouter = require('./routes/admin.route');
+var addNewMenuRouter = require('./routes/addNewMenu.route');
+var categories = require('./routes/categories.route');
 // var otpRouter = require('./routes/otp.route');
 
 
@@ -39,6 +41,8 @@ app.use('/api', indexRouter);
 app.use('/users', usersRouter);
 app.use('/uploads', uploadRouter);
 app.use('/admin', adminRouter);
+app.use('/menu', addNewMenuRouter);
+app.use('/categories', categories)
 // app.use('/otp', otpRouter);
 
 
