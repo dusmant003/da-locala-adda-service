@@ -14,8 +14,8 @@ var uploadRouter = require('./routes/upload.route');
 var adminRouter = require('./routes/admin.route');
 var addNewMenuRouter = require('./routes/addNewMenu.route');
 var categories = require('./routes/categories.route');
-var usersignup = require('./routes/usersignup.route');
-// var otpRouter = require('./routes/otp.route');
+var authRouter = require('./routes/auth.route');
+
 
 
 
@@ -44,8 +44,7 @@ app.use('/uploads', uploadRouter);
 app.use('/admin', adminRouter);
 app.use('/menu', addNewMenuRouter);
 app.use('/categories', categories);
-app.use('/signup', usersignup);
-// app.use('/otp', otpRouter);
+app.use('/auth', authRouter);
 
 
 
