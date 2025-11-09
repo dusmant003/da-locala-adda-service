@@ -5,7 +5,7 @@ let testAccount;
 // Create Ethereal test account at startup
 const createTestAccount = async () => {
   testAccount = await nodemailer.createTestAccount();
-  console.log("Ethereal account created:", testAccount);
+  // console.log("Ethereal account created:", testAccount);
 };
 createTestAccount();
 
@@ -30,7 +30,7 @@ const sendEmail = async ({ to, subject, text }) => {
       subject,
       text,
     });
-    console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
+    // console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
     return true;
   } catch (err) {
     console.error("Error sending email:", err);
